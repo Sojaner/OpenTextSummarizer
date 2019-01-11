@@ -16,7 +16,7 @@ namespace OpenTextSummarizerCore.Demo
                     MaxSummarySentences = 5
                 });
 
-            string summery = string.Join("", summarizedDocument.Sentences);
+            string summery = string.Join(Environment.NewLine, summarizedDocument.Sentences);
             Console.Write(summery);
             Console.ReadLine();
         }
